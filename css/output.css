@@ -175,6 +175,7 @@ body {
     text-transform: none;
     font-family: SpaceGrotesk-Bold, sans-serif;
     height: 10px;
+    margin-top: 6px;
   }
   form .date-n-cvv {
     display: flex;
@@ -184,7 +185,6 @@ body {
   }
   form .date-n-cvv .form-date, form .date-n-cvv .form-cvc {
     width: 50%;
-    height: 86px;
   }
   form .form-date-input {
     display: flex;
@@ -199,7 +199,6 @@ body {
     margin-right: 10px;
   }
   form #cvc {
-    margin: 4px 0 4px 0;
     width: 100%;
   }
   .completed-state-content {

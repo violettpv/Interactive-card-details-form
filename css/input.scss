@@ -193,7 +193,9 @@ body {
       text-transform: none;
       font-family: SpaceGrotesk-Bold, sans-serif;
       height: 10px;
+      margin-top: 6px;
     }
+
     .date-n-cvv {
       display: flex;
       flex-direction: row;
@@ -202,7 +204,8 @@ body {
 
       .form-date, .form-cvc {
         width: 50%;
-        height: 86px;
+        //height: 86px;
+
       }
     }
     .form-date-input {
@@ -218,7 +221,7 @@ body {
       margin-right: 10px;
     }
     #cvc {
-      margin: 4px 0 4px 0;
+      //margin: 4px 0 4px 0;
       width: 100%;
     }
   }
