@@ -62,7 +62,7 @@ body {
   .card-content {
     text-transform: uppercase;
     color: white;
-    width: 350px;
+    width: 340px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -101,10 +101,10 @@ body {
     justify-content: space-around;
   }
   .card-front-side .card-logo-container {
-    margin: 5% 0 0 5%;
+    margin: 7% 0 0 7%;
   }
   .card-front-side img {
-    width: 52px;
+    width: 62px;
     height: auto;
   }
   .card-front-side .card-info {
@@ -117,7 +117,7 @@ body {
     font-size: 17px;
     text-align: center;
     letter-spacing: 2.2px;
-    padding: 10px 0 15px 0;
+    padding: 10px 0 10px 0;
   }
   .card-front-side .card-name-and-date {
     letter-spacing: 0.8px;
@@ -174,6 +174,7 @@ body {
     font-size: 10px;
     text-transform: none;
     font-family: SpaceGrotesk-Bold, sans-serif;
+    height: 10px;
   }
   form .date-n-cvv {
     display: flex;
@@ -183,6 +184,7 @@ body {
   }
   form .date-n-cvv .form-date, form .date-n-cvv .form-cvc {
     width: 50%;
+    height: 86px;
   }
   form .form-date-input {
     display: flex;
@@ -201,7 +203,7 @@ body {
     width: 100%;
   }
   .completed-state-content {
-    width: 340px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,6 +239,7 @@ body {
     border-radius: 5px;
     padding: 10px 20px;
     width: 95%;
+    height: 45px;
   }
   form button:hover, #completed-state-container button:hover {
     cursor: pointer;
@@ -271,7 +274,7 @@ body {
     background: url("../images/bg-main-desktop.png") no-repeat;
     background-size: cover;
   }
-  #form-container {
+  #form-container, #completed-state-container {
     width: 70%;
     height: 100%;
   }
