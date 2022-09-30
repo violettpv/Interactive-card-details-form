@@ -166,15 +166,12 @@ body {
     border-style: solid;
     border-color: #600594 #6448fe #600594 #6448fe;
   }
-  form input[type=text] .invalid-input {
-    border: 1px solid hsl(0deg, 100%, 66%);
-  }
   form #fullname-error, form #card-number-error, form #date-error, form #cvc-error {
     color: hsl(0deg, 100%, 66%);
     font-size: 10px;
     text-transform: none;
     font-family: SpaceGrotesk-Bold, sans-serif;
-    height: 10px;
+    height: 7px;
     margin-top: 6px;
   }
   form .date-n-cvv {
@@ -185,6 +182,7 @@ body {
   }
   form .date-n-cvv .form-date, form .date-n-cvv .form-cvc {
     width: 50%;
+    height: 86px;
   }
   form .form-date-input {
     display: flex;

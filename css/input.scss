@@ -183,16 +183,16 @@ body {
         border-color: #600594 #6448fe #600594 #6448fe;
         //background: linear-gradient(90deg, #600594, #6448fe, #600594, #6448fe);
       }
-      .invalid-input {
-        border: 1px solid $red-input-errors;
-      }
+      //.invalid-input {
+      //  border: 1px solid $red-input-errors;
+      //}
     }
     #fullname-error, #card-number-error, #date-error, #cvc-error {
       color: $red-input-errors;
       font-size: 10px;
       text-transform: none;
       font-family: SpaceGrotesk-Bold, sans-serif;
-      height: 10px;
+      height: 7px; // prev. 10px
       margin-top: 6px;
     }
 
@@ -204,7 +204,7 @@ body {
 
       .form-date, .form-cvc {
         width: 50%;
-        //height: 86px;
+        height: 86px;
 
       }
     }

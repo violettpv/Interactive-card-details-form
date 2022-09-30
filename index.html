@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="css/output.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <div id="main-container">
@@ -23,7 +25,9 @@
                     <div id="card-number">0000 0000 0000 0000</div>
                     <div class="card-name-and-date">
                         <div id="cardholder-name">Jane Appleseed</div>
-                        <div id="card-expiry-date">00/00</div>
+                        <div id="card-expiry-date">
+                            <span id="month">00</span>/<span id="year">00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,27 +38,27 @@
         <form action="">
             <div class="form-group">
                 <label for="cardholder">Cardholder Name</label>
-                <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed">
-                <span id="fullname-error">Test</span> <!--Invalid input.-->
+                <input type="text" maxlength="36" id="cardholder" placeholder="e.g. Jane Appleseed">
+                <span id="fullname-error"></span> <!--Invalid input.-->
             </div>
             <div class="form-group">
                 <label for="card-num">Card Number</label>
-                <input type="text" id="card-num" placeholder="e.g. 1234 5678 9123 0000">
-                <span id="card-number-error">Test</span> <!--Wrong format, numbers only.-->
+                <input type="text" maxlength="19" id="card-num" placeholder="e.g. 1234 5678 9123 0000">
+                <span id="card-number-error"></span> <!--Wrong format, numbers only.-->
             </div>
             <div class="form-group date-n-cvv">
                 <div class="form-date">
                     <label id="exp-date">Exp. Date (MM/YY)</label>
                     <div class="form-date-input">
-                        <input type="text" id="exp-month" placeholder="MM">
-                        <input type="text" id="exp-year" placeholder="YY">
+                        <input type="text" maxlength="2" id="exp-month" placeholder="MM">
+                        <input type="text" maxlength="2" id="exp-year" placeholder="YY">
                     </div>
-                    <span id="date-error">Test</span> <!--Can't be blank.-->
+                    <span id="date-error"></span> <!--Can't be blank.-->
                 </div>
                 <div class="form-cvc">
                     <label for="cvc">CVC</label>
-                    <input type="text" id="cvc" placeholder="e.g. 123">
-                    <span id="cvc-error">Test</span> <!--Can't be blank.-->
+                    <input type="text" maxlength="3" id="cvc" placeholder="e.g. 123">
+                    <span id="cvc-error"></span> <!--Can't be blank.-->
                 </div>
             </div>
             <button type="button" id="confirm-btn" onclick="sendCardDetails()" class="btn">Confirm</button>
