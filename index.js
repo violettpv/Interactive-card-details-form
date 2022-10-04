@@ -7,10 +7,8 @@ const cardNumberInput = document.getElementById('card-num');
 const monthInput = document.getElementById('exp-month');
 const yearInput = document.getElementById('exp-year');
 const cvcInput = document.getElementById('cvc');
-// === Buttons ===
-const confirmButton = document.getElementById('confirm-btn');
-const continueButton = document.getElementById('continue-btn');
 // === Card Divs ===
+const cardLogo = document.getElementsByClassName('card-logo')[0];
 const fullname = document.getElementById('cardholder-name');
 const cardNumber = document.getElementById('card-number');
 const month = document.getElementById('month');
@@ -205,7 +203,6 @@ $('#cvc').keypress(function (e) {
 function sendCardDetails() {
     let success = true;
 
-
     if (nameInput.value === '') {
         invalidNameSpan.innerHTML = "Can't be blank.";
         nameInput.style.border = '1.5px solid #FF5252FF';
@@ -232,7 +229,6 @@ function sendCardDetails() {
         invalidCvcSpan.innerHTML !== '') {
         success = false;
     }
-
 
     if (success) {
         formContainer.style.display = "none";
